@@ -288,8 +288,8 @@ async function startServer() {
     // AI Studio iframe requires SameSite=None and Secure=true
     res.cookie("token", token, {
       httpOnly: true,
-      secure: true,
-      sameSite: 'none',
+      secure: false, // Set to false to allow cookies over HTTP
+      sameSite: 'lax', // Use lax instead of none if secure is false
       maxAge: 24 * 60 * 60 * 1000 // 24 hours
     });
 
