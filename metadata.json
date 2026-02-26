@@ -1,0 +1,5 @@
+{
+  "name": "CU Hostel Gym Portal",
+  "description": "Student gym slot booking system with warden administration and profile verification.",
+  "requestFramePermissions": []
+}

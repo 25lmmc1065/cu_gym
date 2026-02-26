@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cu-maroon: #800000;
+  --color-cu-navy: #002147;
+  --color-cu-gold: #D4AF37;
+  --color-cu-light: #f4f4f4;
+  --color-background-light: #f4f4f4;
+  --color-background-white: #ffffff;
+  
+  --font-display: "Lexend", sans-serif;
+  --font-sans: "Roboto", sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  
+  --animate-marquee: marquee 15s linear infinite;
+  
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-cu-light text-slate-800;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.active-icon {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.cu-gradient-header {
+  background: linear-gradient(90deg, #800000 0%, #a00000 100%);
+}
+
+.ios-shadow {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ios-blur {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
